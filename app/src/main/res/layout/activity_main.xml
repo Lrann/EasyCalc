@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="narl.sayson.com.easycalc.MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter 1st number" />
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNum2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtNum2"
+        android:layout_below="@+id/txtNum2"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+
+        android:hint="Enter 2nd number"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+       android:background="#E0E0E0"
+        android:id="@+id/midView"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtNum1"
+        android:layout_marginTop="94dp"
+        android:text="                      0"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_alignLeft="@+id/plusButton"
+        android:layout_alignStart="@+id/plusButton"
+        android:layout_alignRight="@+id/clearButton"
+        android:layout_alignEnd="@+id/clearButton" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/minusButton"
+        android:layout_alignBottom="@+id/minusButton"
+        android:layout_toLeftOf="@+id/minusButton"
+        android:layout_toStartOf="@+id/minusButton"
+        android:text="+"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/divButton"
+        android:layout_alignStart="@+id/divButton"
+        android:layout_centerVertical="true"
+        android:text="-"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/minusButton"
+        android:layout_toRightOf="@+id/minusButton"
+        android:layout_toEndOf="@+id/minusButton" />
+
+
+    <Button
+        android:id="@+id/multbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/plusButton"
+        android:layout_alignStart="@+id/plusButton"
+        android:layout_below="@+id/plusButton"
+        android:text="X"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/multbutton"
+        android:layout_alignBottom="@+id/multbutton"
+        android:layout_centerHorizontal="true"
+        android:text="/"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearButton"
+        android:layout_toEndOf="@+id/divButton"
+        android:layout_toRightOf="@+id/divButton"
+        android:text="EXIT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+</RelativeLayout>
